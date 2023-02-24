@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">-------STUDENT MANAGE--------</h1>
+    <div class="div-form">
+        <label for="">Name:</label>
+        <input type="text" class="input-name w-50">
+        <label for="">Age:</label>
+        <input type="text" class="input-age w-50">
+        <label for="">Address:</label>
+        <input type="text" class="input-address w-50" style="display: block;">
+        <button onclick="createStudent()" style=" margin: 10px 0;" class="button-1">create</button>
+        <div class="search">
+            <input type="text" class="input-search w-50">
+            <button onclick="search()" class="button-1">search</button>
+        </div>
+    </div>
+    <div class="div-table">
+        <table border="1" style=" margin-top: 20px;">
+            <tr>
+                <th>STT</th>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>ADDRESS</th>
+                <th>EDIT</th>
+                <th>DELETE</th>
+            </tr>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
